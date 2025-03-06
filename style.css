@@ -22,20 +22,16 @@ body {
 
 header {
     background-color: white;
-    border-top-left-radius: var(--border-radius);
-    border-top-right-radius: var(--border-radius);
 }
 
 .subscription {
     background-color: var(--cyan);
     color: white;
-    border-bottom-left-radius: var(--border-radius);
 }
 
 .why-us {
     background-color: var(--light-cyan);
     color: white;
-    border-bottom-right-radius: var(--border-radius);
 }
 
 h1 {
@@ -132,6 +128,8 @@ a:hover {
     flex-wrap: wrap;
     filter: drop-shadow(0 1em 1em rgba(152, 166, 189, 0.3));
     margin-top: auto;
+    overflow: hidden;
+    border-radius: var(--border-radius);
 }
 
 .container > * {
@@ -175,14 +173,5 @@ header {
 
     .container > * {
         padding: 1.5em 2.5em;
-    }
-
-    .subscription {
-        border-bottom-left-radius: 0;
-    }
-    
-    .why-us {
-        border-bottom-left-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
     }
 }
