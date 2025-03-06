@@ -20,18 +20,6 @@ body {
     margin: 0;
 }
 
-.wrapper {
-    margin: 2em;
-}
-
-.container {
-    width: min(50em, 95%);
-}
-
-.container > * {
-    padding: 2em 3.5em;
-}
-
 header {
     background-color: white;
     border-top-left-radius: var(--border-radius);
@@ -139,9 +127,19 @@ a:hover {
 }
 
 .container {
+    width: min(50em, 90%);
     display: flex;
     flex-wrap: wrap;
     filter: drop-shadow(0 1em 1em rgba(152, 166, 189, 0.3));
+    margin-top: auto;
+}
+
+.container > * {
+    padding: 2em 3.5em;
+}
+
+footer {
+    margin-top: auto;
 }
 
 header {
@@ -167,6 +165,10 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+    .wrapper {
+        margin: 2em 0;
+    }
+    
     .container {
         flex-direction: column;
     }
