@@ -118,6 +118,7 @@ footer p {
     color: var(--grayish-blue);
     font-size: 0.8em;
     margin-top: 1.5em;
+    text-align: center;
 }
 
 a {
